@@ -20,6 +20,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
+      { from: 'src/assets/img', to: 'assets/img' },
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({

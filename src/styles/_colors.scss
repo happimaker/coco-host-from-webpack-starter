@@ -1,0 +1,134 @@
+/* colors */
+
+// .slider-color {
+//   background-color: $coralColor;
+// }
+
+// .red {
+//   color: $coralColor;
+// }
+
+// .yellow {
+//   color: $yellowColor;
+// }
+
+// .black5 {
+//   color: $black5;
+// }
+
+// .black7 {
+//   color: $black7;
+// }
+
+// .navy {
+//   color: $navyColor;
+// }
+
+// .navy3 {
+//   color: $navyColor3;
+// }
+
+
+$colors: (
+  'black1': $black1,
+	'green': $green,
+	'white': $white
+);
+
+@each $name, $color in $colors {
+	.bg-#{$name} {
+		background-color: $color;
+	}
+}
+
+@each $name, $color in $colors {
+	.fontcolor-#{$name} {
+		color: $color;
+	}
+}
+
+// .green4 {
+//   color: $greenColor4;
+// }
+
+// .melon {
+//   color: $melonColor;
+// }
+
+// .blue {
+//   color: $blueColor;
+// }
+
+// .light-navy {
+//   color: $lightNavyColor;
+// }
+
+// .light-magenta {
+//   color: $lightMagentaColor;
+// }
+
+// // background-colors start
+// .background-orangered {
+//   background-color: $orangeRed;
+// }
+
+// .background-magenta {
+//   background-color: $magentaColor; /* gray */ 
+// }
+
+// .background-gray {
+//   background-color: $grayColor; /* gray */ 
+// }
+
+// .background-gray2 {
+//   background-color: $grayColor2; /* gray */ 
+// }
+
+// .background-green {
+//   background-color: $greenColor; /* Green */ 
+// }
+
+// .background-green2 {
+//   background-color: $greenColor2; /* Green */ 
+// }
+
+// .background-green3 {
+//   background-color: $greenColor3; /* Green */ 
+// }
+
+// .background-green4 {
+//   background-color: $greenColor4; /* Green */ 
+// }
+
+// .background-lightgreen {
+//   background-color: $lightGreen; /* Green */ 
+// }
+
+// .background-skyblue {
+//   background-color: $skyblueColor;
+// }
+
+// .background-blueColor2 {
+//   background-color: $blueColor2;
+// }
+
+// .background-yellow {
+//   background-color: $yellowColor; /* yellow */ 
+// }
+
+// .background-white {
+//   background-color: $white; /* yellow */ 
+// }
+
+// .background-navy {
+//   background-color: $navyColor;
+// }
+
+// .background-navy2 {
+//   background-color: $navyColor2;
+// }
+
+// .background-navy3 {
+//   background-color: $navyColor2;
+// }
+// background-colors end

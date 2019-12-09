@@ -1,6 +1,69 @@
-$body-color: slateblue;
+@import "variables";
+@import "colors";
+@import "mixin";
+@import "fonts";
+@import "components";
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  // @include flex-center;
+  // flex-direction: column;
+  width: $containerWidth;
+}
+
+header {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    .container {
+      @include flex-center;
+      padding: 48px 0;
+
+      img {
+        width: 177px;
+        height: 25px;
+      }
+
+      flex-direction: row;
+      justify-content: space-between;
+
+      .register {
+        @include flex-center;
+        flex-direction: row;
+
+        p {
+          padding: 0 20px;
+        }
+      }  
+    }
+  }
+
+  nav {
+    @include flex-center;
+    width: 100%;
+
+    .container {
+      @include flex-center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 0;
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+      }
+    }
+    
+  }
+}
+
+.slider {
+  
 }

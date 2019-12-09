@@ -1,0 +1,15 @@
+section {
+  padding: 80px 20px;
+}
+
+.button-rounded {
+  @include flex-center;
+  flex-direction: row;
+  border: none;
+  border-radius: 21px;
+  cursor: pointer;
+  margin: 4px 2px;
+  // margin-top: 20px;
+  padding: 12px 24px;
+}
+
