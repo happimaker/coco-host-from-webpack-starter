@@ -133,6 +133,14 @@ header {
   .buttons {
     padding: 20px 0;
     justify-content: flex-start;
+
+    .button-rounded {
+      padding: 12px 37px;
+    }
+
+    .button-rounded-empty {
+      padding: 12px 37px;
+    }
   }
 
 }
