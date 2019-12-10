@@ -16,9 +16,22 @@ $weights: (
 	}
 }
 
+@each $name, $weight in $weights {
+	.raleway-#{$name} {
+    font-family: 'Raleway';
+    font-weight: $weight;
+	}
+}
+
 @for $num from 12 to 100 {
   .fontsize-#{$num} {
-    font-size: $num;
+    font-size: $num + px;
+  }
+}
+
+@for $num from 2 to 100 {
+  .lineheight-#{$num} {
+    line-height: $num + px;
   }
 }
 

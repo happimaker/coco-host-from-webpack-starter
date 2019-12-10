@@ -1,0 +1,12 @@
+<div class="circle-upto flex-column">
+            <p>Upto</p>
+            <div class="flex-row">
+              <p class="fontsize-72 raleway-bold">50</p>
+              <div class="flex-column">
+                <p>%</p>
+                <p>OFF</p>
+              </div>
+            </div>
+            
+            <p class="fontsize-12">Feb. 2015</p>
+          </div>
