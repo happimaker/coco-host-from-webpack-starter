@@ -39,6 +39,10 @@ header {
 
         p {
           padding: 0 20px;
+
+          @media (max-width: $md) {
+            padding: 0 15px;
+          }
         }
       }  
     }
@@ -47,6 +51,10 @@ header {
   nav {
     @include flex-center;
     width: 100%;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
 
     #navbar-trigger {
       // color: $white;
@@ -73,9 +81,10 @@ header {
       @media (max-width: $md) {
         @include flex-center;
         flex-direction: column;
+        text-align: center;
       }
 
-      @include flex-center;
+      
       flex-direction: row;
       justify-content: space-between;
       padding: 15px 0;
