@@ -7,3 +7,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flexSet($jus, $ali, $direct, $alicont) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-direction: $direct;
+  align-content: $direct;
+}
