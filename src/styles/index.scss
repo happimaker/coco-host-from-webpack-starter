@@ -144,3 +144,54 @@ header {
   }
 
 }
+
+.all-plans {
+  @include flex-center;
+
+  .container {
+    @media (max-width: $xl){
+      flex-direction: column;
+    }
+  }
+}
+
+.check-feature {
+  @include flex-center;
+
+  .container {
+    flex-direction: column;
+
+    // h1 {
+    //   padding-bottom: 50px;
+    // }
+
+    .check-feature-bar {
+      padding: 50px;
+    }
+
+    .features {
+      @include flex-center;
+      flex-direction: row;
+      justify-content: space-between;
+      @media (max-width: $lg){
+        flex-wrap: wrap;
+      }
+
+      .feature {
+        @include flex-center;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 15px 15px;
+
+        .feature-comment {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

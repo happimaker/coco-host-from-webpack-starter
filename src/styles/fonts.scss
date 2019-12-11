@@ -17,6 +17,13 @@ $weights: (
 }
 
 @each $name, $weight in $weights {
+	.roboto-#{$name} {
+    font-family: 'Roboto';
+    font-weight: $weight;
+	}
+}
+
+@each $name, $weight in $weights {
 	.raleway-#{$name} {
     font-family: 'Raleway';
     font-weight: $weight;
